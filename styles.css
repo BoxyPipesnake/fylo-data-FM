@@ -1,0 +1,139 @@
+:root {
+    /* Neutral */
+
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    
+    /* Fonts */
+    --ff: 'Raleway', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff);
+    font-size: 0.875rem;
+    color: var(--pale-blue);
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* center the elements */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+}
+
+.box-1 {
+    border-top-right-radius: 81px;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.icon {
+    background-color: var(--very-dark-blue);
+    padding: 0.6rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.space-used {
+    margin: 0.625rem;
+    margin-top: 0;
+}
+
+.span-gb {
+    font-weight: bold;
+}
+
+.bar {
+    width: 100%;
+    background-color: var(--very-dark-blue);
+    margin: 1rem 0;
+    border-radius: 25px;
+}
+
+.inside-bar {
+    width: 85%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 0.47rem;
+    border-radius: 25px;
+}
+
+.space-available {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.space-inital, .space-final {
+    font-weight: bold;
+}
+
+/* .space-inital {
+    margin-left: -4px;
+}
+
+.space-final {
+    margin-right: -4px;
+} */
+
+.left {
+    background-color: var(--pale-blue);
+    color: black;
+    display:  flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: -2rem;
+}
+
+.left-text {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.gb-left {
+    align-self: center;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    font-weight: bold;
+}
