@@ -137,3 +137,64 @@ img {
     color: var(--grayish-blue);
     font-weight: bold;
 }
+
+@media (min-width: 768px) {
+    
+    body {
+        background-color: var(--very-dark-blue);
+        background-image: url(images/bg-desktop.png);
+        background-position: -27px 360px;
+
+
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        max-width: 800px;
+        width: 90%;
+
+        position: relative;
+    }
+
+    .icons {
+        margin-top: 2rem;
+    }
+
+    .icon {
+        padding: 14px;
+    }
+
+    .box-1 {
+        flex: 2;
+        margin-bottom: 0;
+    }
+
+    .box-2 {
+        flex: 3;
+        align-self: flex-end;
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 25%;
+        position: absolute;
+        right: 40px;
+    }
+
+    .left::after {
+        content: "";
+        width: 20px;
+        height: 25px;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        display:inline-block;
+        border-top: 26px solid var(--pale-blue);
+        border-left: 27px solid transparent;
+    }
+
+}
