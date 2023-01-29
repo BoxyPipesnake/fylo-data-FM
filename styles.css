@@ -93,6 +93,18 @@ img {
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     padding: 0.47rem;
     border-radius: 25px;
+    position: relative;
+}
+
+.inside-bar::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0px;
+    border-radius: 50%;
+    background-color: var(--pale-blue);
 }
 
 .space-available {
